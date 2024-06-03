@@ -22,7 +22,7 @@ pipeline{
         steps{
             sh 'curl -uadmin:AP8gcgmmset5jeYChTJYDN6XmDd -T \
              target/bio*.jar \
-              "http://ec2-100-24-242-154.compute-1.amazonaws.com:8081/artifactory/geolocation/bio_${BUILD_ID}.jar"'
+              "http://52.205.99.30:8081/artifactory/geolocation/bio_${BUILD_ID}.jar"'
         }
     }
     stage('docker login'){
