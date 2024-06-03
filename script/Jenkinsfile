@@ -7,7 +7,7 @@ pipeline{
     stage('sonar-scan'){
         steps{
             withSonarQubeEnv('sonarQube'){
-                 sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=hyvrane_geo1'~
+                 sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=hyvrane_geo1'
 
             }
            
